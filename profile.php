@@ -36,7 +36,7 @@
     <div class ="albuns">
         <div class="last">
             <h2> LAST PURCHASES </h2>
-            <div class = "last_al">
+            <div class = "al">
                 <div class = "album_individual">
                     <img src ="" alt="Goblin">
                     <h3> Goblin </h3>
@@ -66,7 +66,7 @@
         </div>
         <div class="favorites">
             <h2> FAVORITES </h2>
-            <div class = "fav_al">
+            <div class = "al">
                 <div class = "album_individual">
                     <img src ="" alt="Goblin">
                     <h3> Goblin </h3>

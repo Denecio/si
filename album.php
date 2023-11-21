@@ -15,9 +15,9 @@
 <main class ="principal">
 
     <div>
-        <img src ="" alt="Estava No Abismo Mas Dei Um Passo Em Frente">
-        <h3> Estava No Abismo Mas Dei Um Passo Em Frente </h3>
-        <h4> Pedro Mafama </h4>
+        <img src ="" alt="Volume2">
+        <h3> Volume2 </h3>
+        <h4> José Pinhal </h4>
     </div>
 
     <div>
