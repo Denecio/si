@@ -30,7 +30,7 @@
         <div class="last">
 
             <h2> LAST PURCHASES </h2>
-            <div class = "last_al">
+            <div class = "al">
                 <div class = "album_individual">
                     <img src ="" alt="Goblin">
                     <h3> Goblin </h3>
@@ -62,7 +62,7 @@
         <div class="favorites">
 
             <h2> FAVORITES </h2>
-            <div class = "favorites_al">
+            <div class = "al">
                 <div class = "album_individual">
                     <img src ="" alt="SATURATION II">
                     <h3> SATURATION II </h3>
@@ -93,7 +93,7 @@
 
     </div>
 
-    <img src="" alt="CARRINHO DE COMPRAS">
+    <img class="card" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS">
 
 </main>
 

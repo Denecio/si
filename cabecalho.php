@@ -1,22 +1,16 @@
 
 <header class="cabecalho">
-    <div class="cab">
-        <div class ="icon">
-            <img src ="" alt="LOGO">
-        </div>
 
-        <nav class ="menu">
-            <ul>
-                <li> <a href="myalbuns.php" class="botao"> MY ALBUNS </a> </li>
-                <li> <a href="buy.php" class="botao"> BUY </a> </li>
-                <li> <a href="search.php" class="botao"> SEARCH </a> </li>
-            </ul>
-        </nav>
+    <a href="index.php" class="logo"> TAPES INC </a>
+    <ul class="menu">
+       <li> <a href="myalbums.php" class="botao"> MY ALBUMS </a> </li>
+       <li> <a href="buy.php" class="botao"> BUY </a> </li>
+       <li> <a href="search.php" class="botao"> SEARCH </a> </li>
+    </ul>
 
-        <div class="profile">
-            <p> profile name </p>
-            <a href="profile.php"> <img src ="" alt="profile picture"> </a>
-        </div>
+    <div class="profile">
+       <a href="profile.php" > <p> ProfileName </p> </a>
+       <a href="profile.php" class="linkprofile"> <img class="profilepic" src ="imagens/imag.jpg" alt="profile picture"> </a>
     </div>
 
 </header>
