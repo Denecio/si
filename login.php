@@ -22,7 +22,7 @@
                 </label>
                 <button type="submit"> LOGIN </button>
             </form>
-            <p> Don't have an account? <a href="register.php"> Register </a> </p>
+            <p> Don't have an account? <a href="register.php"> Click here </a> </p>
         </div>
     </main>
 </body>

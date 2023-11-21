@@ -12,7 +12,7 @@
     $password = $_POST['password'];
     $email = $_POST['email'];
     $nif = $_POST['nif'];
-    $saldo=0;
+    $balance=0;
 
 
     //convert the useranme to a string
@@ -28,11 +28,11 @@
     if (!$result) {
         $newuser='INSERT INTO utilizador (username, password, email) VALUES ('.$username.', '.$password.', '.$email.')';
         $adduser = pg_query($connection, $newuser);
-        $newclient = 'INSERT INTO client (nif, balance, utilizador_username) VALUES ('.$nif.', '.$saldo.', '.$username.')';
+        $newclient = 'INSERT INTO client (nif, balance, utilizador_username) VALUES ('.$nif.', '.$balance.', '.$username.')';
         $addclient = pg_query($connection, $newclient);
         header("Location: ../index.php");
     } else {
         print "username already in use";
     }
-    
+
 ?>
