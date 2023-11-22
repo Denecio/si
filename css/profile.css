@@ -1,0 +1,54 @@
+.principal{
+    background-color: var(--black);
+    color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vw 5vw;
+}
+
+.cab-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-pic{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid var(--rosa);
+}
+
+.username{
+    font-family: RUSSOONE;
+    color: var(--rosa);
+    font-size: 2rem;
+}
+
+.botoes{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-button{
+    background-color: var(--rosa);
+    color: var(--black);
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-family: RUSSOONE;
+    cursor: pointer;
+}
+
+.profile-button:hover{
+    background-color: var(--rosinha);
+}

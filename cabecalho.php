@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header("Location: login.php");
+        exit();
+    }
+    $username = $_SESSION["username"];
+
+?>
 
 <header class="cabecalho">
 
@@ -9,7 +18,7 @@
     </ul>
 
     <div class="profile">
-       <a href="profile.php" > <p> ProfileName </p> </a>
+       <a href="profile.php" > <p> <?php echo $username ?> </p> </a>
        <a href="profile.php" class="linkprofile"> <img class="profilepic" src ="imagens/imag.jpg" alt="profile picture"> </a>
     </div>
 
