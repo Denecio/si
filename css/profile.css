@@ -1,0 +1,31 @@
+.cab-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-pic{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid var(--rosa);
+}
+
+.username{
+    font-family: RUSSOONE;
+    color: var(--rosa);
+    font-size: 2rem;
+}
+
+.botoes{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+

@@ -123,6 +123,26 @@ menu li{
 }
 
 .principal{
-    padding: 5vw 7vw;
+    min-height: 100vh;
     background-color: var(--black);
+    color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vw 5vw;
+}
+
+.button{
+    background-color: var(--rosa);
+    color: var(--black);
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-family: RUSSOONE;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--rosinha);
 }

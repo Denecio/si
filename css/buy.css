@@ -1,12 +1,3 @@
-.principal{
-    background-color: var(--black);
-    color: var(--rosa);
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5vw 5vw;
-}
-
 .pesquisa{
     display:flex;
     flex-direction: row;
