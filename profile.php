@@ -17,12 +17,15 @@
             <div class="user-info">
                 <img src ="imagens/imag.jpg" alt="profile picture" class="profile-pic">
                 <p class="username"> <?php echo $username; ?></p>
+                <form action="./scripts/logout.php">
+                    <button type="submit" class="button"> LOG OUT </button>
+                </form>
             </div>
 
             <div class="botoes">
-                <button type="button" class="profile-button"> ADD MONEY </button>
+                <button type="button" class="button"> ADD MONEY </button>
                 <a href="myalbums.php">
-                    <button type="button" class="profile-button"> SHOW ALL ALBUNS </button>
+                    <button type="button" class="button"> SHOW ALL ALBUNS </button>
                 </a>
             </div>
         </div>

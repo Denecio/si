@@ -9,26 +9,26 @@
 </head>
 
 <body>
-    <h1> TAPES INC </h1>
     <main class ="principal">
+        <h1 class="login-title"> TAPES INC </h1>
         <div class="login">
-            <h2> REGISTER </h2>
-            <form action="./scripts/register.php" method="post">
-                <label for="username"> Username
-                    <input type="text" name="username" placeholder="Username">
+            <h2 class="login-login"> REGISTER </h2>
+            <form action="./scripts/register.php" method="post" class="login-form">
+                <label for="username" class="login-info"> Username
+                    <input type="text" name="username" placeholder="Username" class="login-input">
                 </label>
-                <label for="password"> Password
-                    <input type="password" name="password" placeholder="Password">
+                <label for="password" class="login-info"> Password
+                    <input type="password" name="password" placeholder="Password" class="login-input">
                 </label>
-                <label for="remember"> Email
-                    <input type="email" name="email">
+                <label for="remember" class="login-info"> Email
+                    <input type="email" name="email" placeholder="Email" class="login-input">
                 </label>
-                <label for="nif"> NIF
-                    <input type="number" name="nif">
+                <label for="nif" class="login-info"> NIF
+                    <input type="number" name="nif" placeholder="NIF" class="login-input">
                 </label>
-                <button type="submit"> REGISTER </button>
+                <button type="submit" class="button"> REGISTER </button>
+                <p class="change-loginregister"> Already have an account? <a href="login.php" class="clickhere"> Click here </a> </p>
             </form>
-            <p> Already have an account? <a href="register.php"> Click here </a> </p>
         </div>
     </main>
 </body>

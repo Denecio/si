@@ -26,7 +26,7 @@
     $result = pg_fetch_array($result);
 
     if (!$result) {
-        $newuser='INSERT INTO utilizador (username, password, email) VALUES ('.$username.', '.$password.', '.$email.')';
+        $newuser='INSERT INTO utilizador v VALUES ('.$username.', '.$password.', '.$email.')';
         $adduser = pg_query($connection, $newuser);
         $newclient = 'INSERT INTO client (nif, balance, utilizador_username) VALUES ('.$nif.', '.$balance.', '.$username.')';
         $addclient = pg_query($connection, $newclient);

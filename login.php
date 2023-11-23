@@ -9,20 +9,26 @@
 </head>
 
 <body>
-    <h1> TAPES INC </h1>
     <main class ="principal">
+        <h1 class="login-title"> TAPES INC </h1>
         <div class="login">
-            <h2> LOGIN </h2>
-            <form action="./scripts/login.php" method="post">
-                <label for="username"> Username
-                    <input type="text" name="username" placeholder="Username">
+            <h2 class="login-login"> LOGIN </h2>
+            <form action="./scripts/login.php" method="post" class="login-form">
+                <label for="username" class="login-info"> Username
+                    <input type="text" name="username" placeholder="Username" class="login-input">
                 </label>
-                <label for="password"> Password
-                    <input type="password" name="password" placeholder="Password">
+                <label for="password" class="login-info"> Password
+                    <input type="password" name="password" placeholder="Password" class="login-input">
                 </label>
-                <button type="submit"> LOGIN </button>
+                <label for="admin" class="login-info login-admin"> Admin
+                    <div class="checkbox">
+                        <input type="checkbox" name="admin" class="login-input">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </label>
+                <button type="submit" class="button"> LOGIN </button>
+                <p class="change-loginregister"> Don't have an account? <a href="register.php" class="clickhere"> Click here </a> </p>
             </form>
-            <p> Don't have an account? <a href="register.php"> Click here </a> </p>
         </div>
     </main>
 </body>

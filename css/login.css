@@ -1,0 +1,120 @@
+.principal{
+    align-items: center;
+    gap: 2rem;
+}
+
+.login-title{
+    font-family: STALINISTONE;
+    color: var(--bordo);
+    font-size: 3rem;
+}
+
+.login{
+    font-family: RUSSOONE;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-login{
+    color: var(--rosa);
+    font-size: 2rem;
+}
+
+.login-form{
+    background-color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    font-family: LATO-BOLD;
+    border-radius: 2rem;
+    border: 5px solid var(--white);
+}
+
+.login-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.login-input{
+    background-color: var(--rosinha);
+    border: 3px solid var(--white);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: var(--black);
+}
+
+.login-input::placeholder{
+    color: var(--black);
+    opacity: 0.3;
+    font-family: LATO-LIGHT;
+}
+
+.login-admin{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 2rem;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.checkbox{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-checkbox {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: var(--rosinha);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid var(--white);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: var(--bordo); /* Change the background color when checked */
+}
+
+.button{
+    background-color: var(--bordo);
+    color: var(--rosinha);
+    align-self: center;
+}
+
+.button:hover{
+    background-color: var(--rosachoque);
+}
+
+.change-loginregister{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-family: LATO-REGULAR;
+    align-self: center;
+}
+
+.clickhere{
+    color: var(--bordo);
+    text-decoration: underline;
+}
