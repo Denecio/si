@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="filas">
-                <h2 class="texto_tit"> FAVORITES </h2>
+                <h2> FAVORITES </h2>
                 <div class = "filas1">
                     <div class = "album_individual">
                         <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">
