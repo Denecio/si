@@ -10,9 +10,16 @@
 
     <a href="index.php" class="logo"> TAPES INC </a>
     <ul class="menu">
-       <li> <a href="myalbums.php" class="botao"> MY ALBUMS </a> </li>
-       <li> <a href="buy.php" class="botao"> BUY </a> </li>
-       <li> <a href="search.php" class="botao"> SEARCH </a> </li>
+        <?php
+            if($_SESSION['isadmin'] == true){
+                echo '<li> <a href="albums.php" class="botao"> ALBUMS </a> </li>
+                <li> <a href="stats.php" class="botao"> STATS </a> </li>';
+            } else {
+                echo '<li> <a href="myalbums.php" class="botao"> MY ALBUMS </a> </li>
+                <li> <a href="buy.php" class="botao"> BUY </a> </li>
+                <li> <a href="search.php" class="botao"> SEARCH </a> </li>';
+            }
+        ?>
     </ul>
 
     <div class="profile">
