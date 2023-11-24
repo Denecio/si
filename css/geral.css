@@ -44,6 +44,7 @@
     --rosachoque: #6B244A;
     --bordo: #530303;
     --white: #D9D9D9;
+
 }
 
 /*fim fonts*/
@@ -145,4 +146,9 @@ menu li{
 
 .button:hover{
     background-color: var(--rosinha);
+}
+
+.texto_tit{
+    font-family: RUSSOONE;
+    font-size:1.8em;
 }

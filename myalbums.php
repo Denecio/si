@@ -16,7 +16,7 @@
 
     <div class="pesquisa">
 
-    <h1 class="titulo"> MY ALBUNS </h1>
+    <h1 class="texto_tit"> MY ALBUNS </h1>
 
     <form id="form">
         <input type="search" id="search" placeholder="Search...">

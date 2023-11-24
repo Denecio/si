@@ -1,6 +1,5 @@
 <?php
-    $str = "dbname=projeto user=postgres password=postgres host=localhost 
-    port=5432";
+    $str = "dbname=projeto user=postgres password=postgres host=localhost port=5433";
     $connection = pg_connect($str);
     
     if (!$connection) {

@@ -23,7 +23,9 @@
             </div>
 
             <div class="botoes">
-                <button type="button" class="button"> ADD MONEY </button>
+                <a href="addmoney.php">
+                    <button type="button" class="button"> ADD MONEY </button>
+                </a>
                 <a href="myalbums.php">
                     <button type="button" class="button"> SHOW ALL ALBUNS </button>
                 </a>
@@ -31,7 +33,7 @@
         </div>
         <div class ="albums">
             <div class="filas">
-                <h2> LAST PURCHASES </h2>
+                <h2 class="texto_tit"> LAST PURCHASES </h2>
                 <div class = "filas1">
                     <div class = "album_individual">
                         <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">
@@ -61,7 +63,7 @@
                 </div>
             </div>
             <div class="filas">
-                <h2> FAVORITES </h2>
+                <h2 class="texto_tit"> FAVORITES </h2>
                 <div class = "filas1">
                     <div class = "album_individual">
                         <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">

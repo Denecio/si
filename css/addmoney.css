@@ -1,0 +1,92 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4vw;
+}
+
+.money{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quantidade{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9vw;
+    width:20%;
+}
+
+.pay{
+    border-radius: 10px;
+    background-color: var(--white);
+    border:none;
+    color: var(--black);
+    height:35px;
+    padding-left: 10px;
+}
+
+#max_dinero{
+    font-family: LATO-LIGHT;
+    display: flex;
+    justify-content: flex-end;
+}
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    gap:0.9vw;
+}
+
+.mbway{
+    display: flex;
+    flex-direction: column;
+}
+
+.credit_card{
+
+}
+
+.credit_card_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+
+}
+
+.subtexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.opcao{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: var(--rosinha);
+    padding:1.2vw 1.2vw;
+    border: solid;
+    border-radius: 10px;
+    color: var(--black);
+    font-family:LATO-REGULAR;
+}
+
+.tit_opcao{
+    font-size:1.2em;
+    font-family: LATO-BOLD;
+}
+
+.pay1{
+    border-radius: 10px;
+    background-color: var(--rosa);
+    border:none;
+    color: var(--black);
+    height:35px;
+    padding-left: 10px;
+}
+
+.button{
+    background-color: var(--white);
+    border-radius: 1rem;
+}
