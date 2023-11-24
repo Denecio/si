@@ -14,8 +14,8 @@
         <div class="login">
             <h2 class="login-login"> EXTRA </h2>
             <form action="./scripts/admin.php" method="post" class="login-form">
-                <label for="username" class="login-info"> Extra Key
-                    <input type="text" name="username" placeholder="Extra Key" class="login-input">
+                <label for="key" class="login-info"> Extra Key
+                    <input type="password" name="key" placeholder="Extra Key" class="login-input">
                 </label>
                 <button type="submit" class="button"> LOGIN </button>
             </form>

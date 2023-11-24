@@ -1,0 +1,85 @@
+.principal{
+    gap: 2rem;
+}
+
+.add-album-title {
+    font-family: RUSSOONE;
+    font-size: 2rem;
+}
+
+.add-album-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+}
+
+.add-album-data {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-column: span 1;
+    width: 100%;
+}
+
+.add-album-info {
+    display: flex;
+    flex-direction: column;
+    font-family: LATO-LIGHT;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.add-album-image {
+    grid-column: span 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 0;
+    padding-bottom: 100%;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid var(--rosinha);
+    border-radius: 1rem;
+}
+
+.add-album-input {
+    background-color: var(--rosinha);
+    border: 3px solid var(--white);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: var(--black);
+    font-family: LATO-LIGHT;
+    width: 100%;
+}
+
+.file-label{
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+}
+
+.add-album-image-input{
+    grid-row: 1;
+    grid-column: 1;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    padding-bottom: 100%;
+    cursor: pointer;
+}
+
+.add-album-input::placeholder {
+    color: var(--black);
+    opacity: 0.3;
+    font-family: LATO-LIGHT;
+}
+
+input[type="date"] {
+    font-family: LATO-LIGHT;
+}
+
+.add-album-button {
+    align-self: flex-end;
+}

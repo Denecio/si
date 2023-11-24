@@ -20,12 +20,12 @@
                 <label for="password" class="login-info"> Password
                     <input type="password" name="password" placeholder="Password" class="login-input">
                 </label>
-                <label for="admin" class="login-info login-admin"> Admin
+                <!-- <label for="admin" class="login-info login-admin"> Admin
                     <div class="checkbox">
                         <input type="checkbox" name="admin" class="login-input">
                         <span class="custom-checkbox"></span>
                     </div>
-                </label>
+                </label> -->
                 <button type="submit" class="button"> LOGIN </button>
                 <p class="change-loginregister"> Don't have an account? <a href="register.php" class="clickhere"> Click here </a> </p>
             </form>

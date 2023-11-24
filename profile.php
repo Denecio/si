@@ -22,7 +22,7 @@
                 </form>
             </div>
 
-            <div class="botoes">
+            <div class="buttons">
                 <button type="button" class="button"> ADD MONEY </button>
                 <a href="myalbums.php">
                     <button type="button" class="button"> SHOW ALL ALBUNS </button>
