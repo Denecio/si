@@ -14,23 +14,23 @@
 
 <main class ="principal">
 
-    <div>
-        <img src ="" alt="Volume2">
+    <div class="capa">
+        <img class="albumIMG" src ="imagens/volume2.jpeg" alt="Volume2">
         <h3> Volume2 </h3>
         <h4> José Pinhal </h4>
     </div>
 
-    <div>
-        <p>
+    <div class="info_album">
+        <p class="details">
             Album - Goblin <br>
             Artist - Tyler, The Creator <br>
             Release Date - May 10, 2011 <br>
             Duration - 1h 22min (18 songs)
         </p>
 
-        <p class="preco"> 34,99€ </p>
+        <p class="preco" > 34,99€ </p>
 
-        <button> Add to card </button>
+        <button type="submit" class="button" id="button_add"> ADD TO CARD </button>
     </div>
 
 </main>
