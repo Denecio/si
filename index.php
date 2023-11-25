@@ -14,7 +14,7 @@
 
         <main class ="principal">
 
-            <h1 class="titulo"> FEATURED </h1>
+            <h1 class="texto_tit"> FEATURED </h1>
 
             <div class ="albuns">
                 <div class = "album_individual">

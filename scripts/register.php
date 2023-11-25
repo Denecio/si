@@ -1,6 +1,5 @@
 <?php
-    $str = "dbname=projeto user=postgres password=postgres host=localhost 
-    port=5432";
+    $str = "dbname=projeto user=postgres password=postgres host=localhost port=5433";
     $connection = pg_connect($str);
     
     if (!$connection) {
@@ -26,7 +25,7 @@
     $result = pg_fetch_array($result);
 
     if (!$result) {
-        $newuser='INSERT INTO utilizador v VALUES ('.$username.', '.$password.', '.$email.')';
+        $newuser='INSERT INTO utilizador VALUES ('.$username.', '.$email.', '.$password.')';
         $adduser = pg_query($connection, $newuser);
         $newclient = 'INSERT INTO client (nif, balance, utilizador_username) VALUES ('.$nif.', '.$balance.', '.$username.')';
         $addclient = pg_query($connection, $newclient);

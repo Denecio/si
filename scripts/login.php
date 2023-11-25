@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $str = "dbname=projeto user=postgres password=postgres host=localhost port=5432";
+    $str = "dbname=projeto user=postgres password=postgres host=localhost port=5433";
     $_SESSION['connection'] = $str;
 
     $connection = pg_connect($str);

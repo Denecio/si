@@ -1,0 +1,63 @@
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8vw;
+}
+
+#principal1{
+    height: auto;
+}
+
+.albumIMG{
+    border-radius: 10px;
+    width:80%;
+}
+
+.capa h3{
+    padding-top: 1vw;
+    font-family: LATO-BOLD;
+    font-size: 3em;
+}
+
+.capa h4{
+    padding-top: 0.5vw;
+    font-family: LATO-LIGHT;
+    font-size: 1.5em;
+}
+
+.info_album{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /*height: 60%;
+    justify-content: space-between;*/
+    gap: 5vw;
+}
+
+.details{
+    font-family: LATO-LIGHT;
+    font-size: 1.3em;
+    line-height:1.3em;
+}
+
+.preco{
+    font-family: LATO-BOLD;
+    font-size: 2.3em;
+}
+
+#button_add{
+    width:300px;
+    align-self: flex-end;
+    background-color: var(--rosachoque);
+    color: var(--rosa);
+    transition: color 300ms, background-color 300ms;
+    align-items: flex-end;
+}
+
+#button_add:hover{
+    width:300px;
+    align-self: flex-end;
+    background-color: var(--rosinha);
+    color: var(--black)
+}

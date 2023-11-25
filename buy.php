@@ -16,7 +16,7 @@
 
     <div class="pesquisa">
 
-        <h1 class="titulo"> BUY </h1>
+        <h1 class="texto_tit"> BUY </h1>
 
         <form id="form">
             <input type="search" id="search" placeholder="Search...">
@@ -28,7 +28,7 @@
     <div class ="albums">
         <div class="filas">
 
-            <h2> NEW THIS WEEK </h2>
+            <h2 class="texto_tit"> NEW THIS WEEK </h2>
             <div class = "filas1">
                 <div class = "album_individual">
                     <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">
@@ -60,7 +60,7 @@
 
         <div class="filas">
 
-            <h2> RECOMMENDED FOR YOU </h2>
+            <h2 class="texto_tit"> RECOMMENDED FOR YOU </h2>
             <div class = "filas1">
                 <div class = "album_individual">
                     <img class="albIMG" src ="imagens/volume2.jpeg" alt="SATURATION II">
