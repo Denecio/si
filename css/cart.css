@@ -1,0 +1,227 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.produto{
+    background-color: var(--rosa);
+    width:60%;
+    color: var(--black);
+    border-radius: 10px;
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    height:28vw;
+}
+
+.albumIMG{
+    width:16vw;
+    border-radius: 10px;
+}
+
+.capa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.capa h3{
+    padding-top: 1vw;
+    padding-left: 0.2em;
+    font-family: LATO-BOLD;
+    font-size: 1.6em;
+}
+
+.capa h4{
+    padding-top: 0.5vw;
+    padding-left: 0.2em;
+    font-family: LATO-LIGHT;
+    font-size: 1.2em;
+}
+
+.info_album{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:110%;
+}
+
+.info_album p{
+    font-family: LATO-LIGHT;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.info_album h3{
+    font-family: LATO-BOLD;
+    font-size: 1.6em;
+}
+
+.det_produtos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.3vw;
+    gap:1.7em;
+}
+
+.preco{
+    display: flex;
+    flex-direction: row;
+    /*align-self: flex-end;*/
+    align-items: flex-end;
+    gap: 5vw;
+}
+
+.preco p{
+    font-size: 1.6em;
+}
+
+/*checkout*/
+
+.checkout{
+    background-color: var(--rosa);
+    width:35%;
+    color: var(--black);
+    border-radius: 10px;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vw;
+}
+
+.out{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.checkout_tit{
+    font-family: LATO-LIGHT;
+    font-size: 1em;
+}
+
+.checkout h2{
+    font-family: LATO-BOLD;
+    font-size: 1.6em;
+}
+
+.checkout p{
+    font-family: LATO-LIGHT;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.albumIMG1{
+    width:10vw;
+    border-radius: 10px;
+}
+
+.descricao div{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+}
+
+.descricao div h3{
+    font-family: LATO-BOLD;
+    font-size:1.5em;
+}
+
+.descricao div h4{
+    font-family: LATO-LIGHT;
+    font-size: 1.2em;
+}
+
+.descricao div p{
+    font-family: LATO-LIGHT;
+    font-size: 1.2em;
+}
+
+.total{
+    display:flex;
+    flex-direction: column;
+    gap:1vw;
+}
+
+.total div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total div p{
+    font-size: 1.5em;
+}
+
+.button{
+    background-color: var(--black);
+    color: var(--rosa);
+    align-self: flex-end;
+    transition: color 300ms, background-color 300ms;
+    width:10vw;
+}
+
+.button:hover{
+    background-color: var(--rosachoque);
+    color: var(--rosinha);
+}
+
+.shipping{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    width:100%;
+}
+
+.shipping div{
+    display:flex;
+    font-size: 1.2em;
+}
+
+#continente{
+
+    justify-content: space-between;
+}
+
+#buttons{
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.button_ship{
+    border:solid;
+    background-color: transparent;
+    border-color: var(--rosachoque);
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: var(--rosachoque);
+    font-family: LATO-BLACK;
+    transition: background-color 300ms, border-color 300ms, color 300ms;
+}
+
+.button_ship:hover{
+    background-color: var(--rosachoque);
+    border-color: transparent;
+    color: var(--rosa);
+}
+
+.button_ship:active{
+    background-color: var(--rosachoque);
+    border-color: transparent;
+    color: var(--rosa);
+}

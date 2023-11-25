@@ -47,7 +47,7 @@
                     </div>
                     <div class = "album_individual">
                         <img class="albIMG" src ="imagens/volume2.jpeg" alt="Melodic Blue">
-                        <h3> Melocdic Blue </h3>
+                        <h3> Melodic Blue </h3>
                         <h4> Baby Keem </h4>
                     </div>
                     <div class = "album_individual">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="filas">
-                <h2> FAVORITES </h2>
+                <h2 class="texto_tit"> FAVORITES </h2>
                 <div class = "filas1">
                     <div class = "album_individual">
                         <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">
@@ -77,7 +77,7 @@
                     </div>
                     <div class = "album_individual">
                         <img class="albIMG" src ="imagens/volume2.jpeg" alt="Melodic Blue">
-                        <h3> Melocdic Blue </h3>
+                        <h3> Melodic Blue </h3>
                         <h4> Baby Keem </h4>
                     </div>
                 </div>
