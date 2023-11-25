@@ -5,6 +5,10 @@
     padding-top: 8vw;
 }
 
+#principal1{
+    height: auto;
+}
+
 .albumIMG{
     border-radius: 10px;
     width:80%;

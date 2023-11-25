@@ -54,8 +54,10 @@
                 <div class = "descricao">
                     <img class="albumIMG1" src ="imagens/volume2.jpeg" alt="Volume 2">
                     <div>
-                        <h3> Volume 2 </h3>
-                        <h4> José Pinhal </h4>
+                        <div>
+                            <h3> Volume 2 </h3>
+                            <h4> José Pinhal </h4>
+                        </div>
                         <p> 34,99€ </p>
                     </div>
                 </div>

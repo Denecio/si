@@ -12,7 +12,7 @@
 
 <?php include 'cabecalho.php'; ?>
 
-<main class ="principal">
+<main class ="principal" id="principal1">
 
     <div class="capa">
         <img class="albumIMG" src ="imagens/volume2.jpeg" alt="Volume2">
@@ -30,7 +30,6 @@
 
         <p class="preco" > 34,99€ </p>
 
-        <button type="submit" class="button" id="button_add"> ADD TO CART </button>
     </div>
 
 </main>
