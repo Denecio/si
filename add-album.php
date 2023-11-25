@@ -12,7 +12,7 @@
     <?php include 'cabecalho.php'; ?>
     <main class ="principal">
         <h1 class="add-album-title"> ALBUM INFO </h1>
-        <form action="./scripts/add-album.php" method="post" class="add-album-form">
+        <form action="./scripts/add-album.php" method="post" class="add-album-form" enctype="multipart/form-data" >
             <div class="add-album-info add-album-image">
                 <button for="img" class="file-label button" id="fileName">Change Photo</button>
                 <input type="file" name="img" placeholder="Image" class="add-album-input add-album-image-input" accept="image/*">
