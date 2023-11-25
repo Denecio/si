@@ -33,21 +33,11 @@
     color: var(--black);
 }
 
-.titulo{
-    font-family: RUSSOONE;
-    font-size:1.8em;
-}
-
 .albums{
     padding-top:30px;
     display: flex;
     flex-direction: column;
     gap:50px;
-}
-
-.filas h2{
-    font-family: RUSSOONE;
-    font-size:1.3em;
 }
 
 .filas1{
