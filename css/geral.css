@@ -100,6 +100,8 @@ a{
     justify-content: space-around;
     color: var(--bordo);
     height: 130%;
+    width: 130%;
+    margin: 0px 20px;
     border-radius: 0px 0px 15px 15px;
     font-size:1.3em;
     transition: color 300ms, background-color 300ms;
