@@ -76,7 +76,7 @@ a{
 }
 
 .menu{
-    width:35vw;
+    width:36vw;
     height:95px;
     padding:16px;
     background-color: var(--rosinha);
@@ -87,15 +87,27 @@ a{
     gap:30px;
 }
 
-menu li{
-    display: inline-block;
+.menu li {
+    display: flex;
+    align-items: center;
+    height: 130%;
 
 }
 
 .botao{
+    display: flex;
+    align-items: center;
     justify-content: space-around;
     color: var(--bordo);
+    height: 130%;
+    border-radius: 0px 0px 15px 15px;
     font-size:1.3em;
+    transition: color 300ms, background-color 300ms;
+}
+
+.botao:hover{
+    background-color: var(--bordo);
+    color: var(--rosinha);
 }
 
 .profile{
@@ -116,7 +128,6 @@ menu li{
     border-radius: 50px;
     border-color: var(--bordo);
 }
-
 
 .profile p{
     color: var(--bordo);

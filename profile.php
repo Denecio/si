@@ -22,7 +22,7 @@
                 </form>
             </div>
 
-            <div class="botoes">
+            <div class="buttons">
                 <a href="addmoney.php">
                     <button type="button" class="button"> ADD MONEY </button>
                 </a>
