@@ -20,7 +20,7 @@
                 <label for="password" class="login-info"> Password
                     <input type="password" name="password" placeholder="Password" class="login-input">
                 </label>
-                <label for="remember" class="login-info"> Email
+                <label for="email" class="login-info"> Email
                     <input type="email" name="email" placeholder="Email" class="login-input">
                 </label>
                 <label for="nif" class="login-info"> NIF
