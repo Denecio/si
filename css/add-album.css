@@ -41,6 +41,18 @@
     align-items: center;
     border: 3px solid var(--rosinha);
     border-radius: 1rem;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.add-album-image img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 0.5;
 }
 
 .add-album-input {
@@ -57,17 +69,16 @@
 .file-label{
     grid-row: 1;
     grid-column: 1;
-    z-index: 1;
+    z-index: 2;
 }
 
 .add-album-image-input{
+    visibility: hidden;
     grid-row: 1;
     grid-column: 1;
-    opacity: 0;
     height: 0;
     padding: 0;
     padding-bottom: 100%;
-    cursor: pointer;
 }
 
 .add-album-input::placeholder {

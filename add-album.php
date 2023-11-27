@@ -14,7 +14,7 @@
         <h1 class="add-album-title"> ALBUM INFO </h1>
         <form action="./scripts/add-album.php" method="post" class="add-album-form" enctype="multipart/form-data" >
             <div class="add-album-info add-album-image">
-                <button for="img" class="file-label button" id="fileName">Change Photo</button>
+                <div for="img" class="file-label button" id="fileName" type>Change Photo</div>
                 <input type="file" name="img" placeholder="Image" class="add-album-input add-album-image-input" accept="image/*">
             </div> 
             <div class="add-album-data">
@@ -41,5 +41,6 @@
             </div>
         </form>
     </main>
+    <script src="scripts/image.js"></script>
 </body>
 </html>
