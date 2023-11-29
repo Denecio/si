@@ -35,3 +35,11 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Ignore uploads #
+##################
+wp-content/uploads/*
+
+#Ignore connection.json #
+##################
+connection.json

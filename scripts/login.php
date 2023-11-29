@@ -1,6 +1,8 @@
 <?php
     session_start();
-    $str = "dbname=projeto user=postgres password=postgres host=localhost port=5432";
+    $str = file_get_contents('./connection.json');
+    $str = str_replace('"','', $str);
+
     $_SESSION['connection'] = $str;
 
     $connection = pg_connect($str);
