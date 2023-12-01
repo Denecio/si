@@ -11,27 +11,34 @@
 <body>
 
 <?php include 'cabecalho.php'; ?>
-
+<?php include 'scripts/album.php'; ?>
 <main class ="principal" id="principal1">
 
     <div class="capa">
-        <img class="albumIMG" src ="imagens/volume2.jpeg" alt="Volume2">
-        <h3> Volume2 </h3>
-        <h4> José Pinhal </h4>
+        <img class="albumIMG" src ="<?php print $img ?>" alt="Volume2">
+        <h3> <?php print $name ?> </h3>
+        <h4> <?php print $artist ?> </h4>
     </div>
 
     <div class="info_album">
         <p class="details">
-            Album - Goblin <br>
-            Artist - Tyler, The Creator <br>
-            Release Date - May 10, 2011 <br>
-            Duration - 1h 22min (18 songs)
+            Album - <?php print $name ?> <br>
+            Artist - <?php print $artist ?> <br>
+            Release Date - <?php print $release_date ?> <br>
         </p>
 
-        <p class="preco" > 34,99€ </p>
-
+        <p class="preco" ><?php print $price ?>€ </p>
+        
+        <div class="previous-prices">
+            <p class="popup">Check previous prices <b class="dropdown">V</b> </p>
+            <div class="popup-content popup-content-disabled">
+                <p> <?php print $price ?>€ </p>
+                <p> <?php print $price ?>€ </p>
+                <p> <?php print $price ?>€ </p>
+            </div>
+        </div>
     </div>
-
+    <script src="scripts/popup.js"></script>
 </main>
 
 
