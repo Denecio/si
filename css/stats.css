@@ -1,0 +1,31 @@
+.tabelas{
+    display: flex;
+    gap: 4rem;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.stat-header{
+    font-family: RUSSOONE;
+    font-size: 1.5rem;
+}
+
+.stats-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stats-key{
+    font-family: LATO-REGULAR;
+    font-size: 1.5rem;
+}
+
+.stats-value{
+    font-family: RUSSOONE;
+    font-size: 4rem;
+}
