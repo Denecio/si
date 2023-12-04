@@ -7,10 +7,10 @@
     
     //print the albums
     foreach($result as $album){
-        echo "<div class='album_individual'>";
+        echo "<a href="album.php" class='album_individual'>";
         echo "<img src='".$album['img']."' class='albIMG'>";
         echo "<h3 class='album-name'>".$album['name']."</h3>";
         echo "<h4 class='album-artist'>".$album['artist']."</h4>";
-        echo "</div>";
+        echo "</a>";
     }
 ?>
