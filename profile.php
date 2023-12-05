@@ -6,7 +6,6 @@
     <title>tapes inc</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/buy.css">
 </head>
 
 <body>
@@ -35,51 +34,13 @@
             <div class="filas">
                 <h2 class="texto_tit"> LAST PURCHASES </h2>
                 <div class = "filas1">
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">
-                        <h3> Goblin </h3>
-                        <h4> Tyler, The Creator </h4>
-                    </div>
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Estava No Abismo Mas Dei Um Passo Em Frente">
-                        <h3> Estava No Abismo Mas Dei Um Passo Em Frente </h3>
-                        <h4> Pedro Mafama </h4>
-                    </div>
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Melodic Blue">
-                        <h3> Melodic Blue </h3>
-                        <h4> Baby Keem </h4>
-                    </div>
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Volume 2">
-                        <h3> Volume 2 </h3>
-                        <h4> José Pinhal </h4>
-                    </div>
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Back in action">
-                        <h3> Back in action </h3>
-                        <h4> midwxst </h4>
-                    </div>
+                    <?php include './scripts/profilelast.php' ?>
                 </div>
             </div>
             <div class="filas">
                 <h2 class="texto_tit"> FAVORITES </h2>
                 <div class = "filas1">
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Goblin">
-                        <h3> Goblin </h3>
-                        <h4> Tyler, The Creator </h4>
-                    </div>
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Estava No Abismo Mas Dei Um Passo Em Frente">
-                        <h3> Estava No Abismo Mas Dei Um Passo Em Frente </h3>
-                        <h4> Pedro Mafama </h4>
-                    </div>
-                    <div class = "album_individual">
-                        <img class="albIMG" src ="imagens/volume2.jpeg" alt="Melodic Blue">
-                        <h3> Melodic Blue </h3>
-                        <h4> Baby Keem </h4>
-                    </div>
+                    <?php include './scripts/profilelast.php' ?>
                 </div>
             </div>
         </div>
