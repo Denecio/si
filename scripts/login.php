@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $str = file_get_contents('C:\dados\1semestre\SI\PROJETO\si\scripts\connections.json');
+    $str = file_get_contents('../scripts/connection.json');
     $str = str_replace('"','', $str);
 
     $_SESSION['connection'] = $str;
