@@ -76,6 +76,7 @@
     font-family: LATO-REGULAR;
     text-decoration: underline;
     cursor: pointer;
+    width: fit-content;
 }
 
 .dropdown{

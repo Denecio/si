@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
 <?php include 'cabecalho.php'; ?>
 <?php include 'scripts/album.php'; ?>
 <main class ="principal" id="principal1">
@@ -29,14 +28,19 @@
 
         <p class="preco" ><?php print $price ?>€ </p>
         
-        <div class="previous-prices">
-            <p class="popup">Check previous prices <b class="dropdown">V</b> </p>
-            <div class="popup-content popup-content-disabled">
-                <p> <?php print $price ?>€ </p>
-                <p> <?php print $price ?>€ </p>
-                <p> <?php print $price ?>€ </p>
+        <?php
+        if($_SESSION["isadmin"])
+        print
+        "<div class='previous-prices'>
+            <p class='popup'>Check previous prices <b class='dropdown'>V</b> </p>
+            <div class='popup-content popup-content-disabled'>
+                $previousPrices
             </div>
         </div>
+        <a href='add-album.php?name=$name'>
+            <button class='button'> EDIT ALBUM</button>
+        </a>"
+        ?>
     </div>
     <script src="scripts/popup.js"></script>
 </main>
