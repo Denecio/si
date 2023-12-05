@@ -37,6 +37,11 @@
                 <p> <?php print $price ?>€ </p>
             </div>
         </div>
+
+        <?php print "<form action='scripts/addtocart.php?name=".$name."'method='post'>"; ?>
+            <input type="hidden" name="item_id" value="<?php echo $item_id; ?>">
+            <button value="add" name="add" type="submit" class="add_card">Add To Cart</button>
+        </form>
     </div>
     <script src="scripts/popup.js"></script>
 </main>

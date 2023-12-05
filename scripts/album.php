@@ -8,10 +8,10 @@
     $result = pg_fetch_array($result);
     //store the info in variables
     //match the name of the columns in the database
-    $name = $result[0];
-    $units = $result[1];
-    $price = $result[2];
-    $artist = $result[3];
-    $release_date = $result[6];
-    $img = $result[7];
+    $name = $result['name'];
+    $units = $result['units'];
+    $price = $result['price'];
+    $artist = $result['artist'];
+    $release_date = $result['release_date'];
+    $img = $result['img'];
 ?>

@@ -100,7 +100,7 @@ a{
     justify-content: space-around;
     color: var(--bordo);
     height: 130%;
-    padding: 0px 80px;
+    padding: 0px 100px;
     border-radius: 0px 0px 15px 15px;
     font-size:1.3em;
     transition: color 300ms, background-color 300ms;
@@ -171,6 +171,20 @@ a{
 }
 
 .card{
+
+    height:auto;
     background-color: var(--rosa);
+    padding: 10px;
     border-radius: 50px;
+    position: sticky;
+    bottom: 100px;
+    align-self: flex-end;
+}
+
+.card1{
+    width:35px;
+}
+
+.albIMG{
+    width: 400px;
 }

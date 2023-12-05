@@ -20,7 +20,7 @@
                 <?php include './scripts/albums.php' ?>
             </div>
 
-            <img class="card" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS">
+            <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>
 
         </main>
 
