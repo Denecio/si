@@ -77,7 +77,6 @@ a{
 }
 
 .menu{
-    width:36vw;
     height:95px;
     padding:16px;
     background-color: var(--rosinha);
@@ -101,8 +100,7 @@ a{
     justify-content: space-around;
     color: var(--bordo);
     height: 130%;
-    width: 130%;
-    margin: 0px 20px;
+    padding: 0px 100px;
     border-radius: 0px 0px 15px 15px;
     font-size:1.3em;
     transition: color 300ms, background-color 300ms;
@@ -143,7 +141,7 @@ a{
     color: var(--rosa);
     display: flex;
     flex-direction: column;
-    padding: 5vw 10vw;
+    padding: 7vw 10vw;
 }
 
 .buttons{
@@ -170,4 +168,23 @@ a{
 .texto_tit{
     font-family: RUSSOONE;
     font-size:1.8em;
+}
+
+.card{
+
+    height:auto;
+    background-color: var(--rosa);
+    padding: 10px;
+    border-radius: 50px;
+    position: sticky;
+    bottom: 100px;
+    align-self: flex-end;
+}
+
+.card1{
+    width:35px;
+}
+
+.albIMG{
+    width: 400px;
 }

@@ -1,11 +1,3 @@
-.principal{
-    color: var(--rosa);
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
 .albuns{
     padding-top:50px;
     display: grid;

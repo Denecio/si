@@ -1,4 +1,5 @@
 <?php
+    //get the name, the artist and the image of the album from the database
     $connection = pg_connect($_SESSION['connection']);
     $album = "SELECT name, artist, img FROM album";
     $result = pg_query($connection, $album);
