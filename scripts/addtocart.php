@@ -18,7 +18,7 @@
         $compra2 = pg_fetch_array($compra2);
         if($compra2){ //caso o album já esteja no carrinho
             print $compra2['quantity'];
-            $editar_quantidade = "UPDATE itemoncart SET quantity = ".($compra2['quantity']+1)." WHERE album_name = '$album_name'";
+            $editar_quantidade = "UPDATE itemoncart SET quantity = ".($compra2['quantity']+1)." WHERE purchase_id = ".$compra1['id']." AND album_name='".$album_name."'";
             $editar = pg_query($connection, $editar_quantidade);
             print $editar_quantidade;
         }

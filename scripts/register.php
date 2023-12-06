@@ -19,6 +19,8 @@
     $nif = $_POST['nif'];
     $balance=100;
 
+    $_SESSION['username'] = $username;
+
 
     //convert the useranme to a string
     $username = "'".$username."'";
