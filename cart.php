@@ -11,6 +11,7 @@
 <body>
 
 <?php include 'cabecalho.php'; ?>
+<?php include 'scripts/cart.php'; ?>
 
 <main class ="principal">
 
