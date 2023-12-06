@@ -47,6 +47,8 @@
             <button value="add" name="add" type="submit" class="add_card">Add To Cart</button>
         </form>
     </div>
+    <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>
+
     <script src="scripts/popup.js"></script>
 </main>
 
