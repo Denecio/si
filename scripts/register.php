@@ -17,7 +17,7 @@
     $password = $_POST['password'];
     $email = $_POST['email'];
     $nif = $_POST['nif'];
-    $balance=0;
+    $balance=100;
 
 
     //convert the useranme to a string
