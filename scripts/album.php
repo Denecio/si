@@ -1,4 +1,5 @@
 <?php
+
     $connection = pg_connect($_SESSION['connection']);
     //get the name parameter from URL
     $namelink = $_GET["name"];
