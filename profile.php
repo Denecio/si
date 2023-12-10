@@ -38,12 +38,6 @@
                     <?php include './scripts/profilelast.php' ?>
                 </div>
             </div>
-            <div class="filas">
-                <h2 class="texto_tit"> FAVORITES </h2>
-                <div class = "filas1">
-                    <?php include './scripts/profilelast.php' ?>
-                </div>
-            </div>
         </div>
         <?php
             if ($_SESSION['isadmin'] == false) {
