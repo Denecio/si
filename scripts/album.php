@@ -20,6 +20,11 @@
     $release_date = $result['release_date'];
     $img = $result['img'];
 
+    //check if the album is in any purchase
+    $checkbought = "SELECT * FROM itemoncart WHERE album_name= '$namelink'";
+    $cenas = pg_query($connection, $checkbought);
+    $cenas = pg_fetch_array($cenas);
+
     if($result2){
         $previousPrices = "";
         foreach ($result2 as $row){
