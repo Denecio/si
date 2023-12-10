@@ -18,6 +18,12 @@
     gap: 3vw;
 }
 
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+}
+
 .produto{
     background-color: var(--rosa);
     width:120%;

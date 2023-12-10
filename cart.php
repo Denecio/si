@@ -17,7 +17,6 @@
     <h1 class="texto_tit"> MY CART </h1>
 
     <div class="cart">
-        <div class="albuns_checkout">
         <?php
 
         $connection = pg_connect($_SESSION['connection']);
@@ -43,6 +42,7 @@
         }
 
         else{
+            print "<div class='produtos'>";
             foreach ($receber as $item) {
                 print "<div class='produto'>
                         <div class='capa'>
@@ -69,21 +69,20 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class='total'>
-                        <h3> Total ".$compra1['total']." € </h3>        
-                        <form action='scripts/cart.php?id=".$compra1['id']."&total=".$compra1['total']."'method='post'>
-                            <input type='hidden' name='pay' value='".$compra1['id']."'>
-                            <button value='add' name='add' type='submit' class='button'> Pay </button>
-                        </form>
-                    </div>
+                    </div>";
+                    }
+            print "</div>";
+
+            print"<div class='total'>
+                 <h3> Total ".$compra1['total']." € </h3>        
+                 <form action='scripts/cart.php?id=".$compra1['id']."&total=".$compra1['total']."'method='post'>
+                    <input type='hidden' name='pay' value='".$compra1['id']."'>
+                    <button value='add' name='add' type='submit' class='button'> Pay </button>
+                 </form>
+                 </div>
                             ";
-            }
         }
         ?>
-
-
-        </div>
 
     </div>
 

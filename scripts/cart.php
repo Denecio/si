@@ -27,21 +27,12 @@
         $updateunidade = "UPDATE album SET units = units-".$quantidade1['quantity'];
         $updateunidade1 = pg_query($connection,$updateunidade);
 
-     //   header("Location: ../index.php");
-        print "
-            <div class='popup_pay'>
-                <p> Purchase Completed :) </p>
-            </div>
-        ";
+        header("Location: ../index.php");
+
 
     }
 
     else{
-   //     header("Location: ../addmoney.php");
-
-        print "
-        <div class='popup_pay'>
-                <p> Not enough money :( </p>
-        </div>";
+        header("Location: ../addmoney.php");
     }
 ?>
