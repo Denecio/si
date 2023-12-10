@@ -38,8 +38,9 @@
                 <div class ="albums">
                     <div class="filas">
                         <h2 class="texto_tit"> LAST PURCHASES </h2>
-                        <div class = "filas1">'.
-                            include "./scripts/profilelast.php".'
+                        <div class = "filas1">';
+                            include "./scripts/profilelast.php";
+                        '
                         </div>
                     </div>
                 </div>
