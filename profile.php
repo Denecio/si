@@ -39,9 +39,8 @@
                     <div class="filas">
                         <h2 class="texto_tit"> LAST PURCHASES </h2>
                         <div class = "filas1">';
-                            include "./scripts/profilelast.php";
-                        '
-                        </div>
+                            include "scripts/profilelast.php";
+                        print '</div>
                     </div>
                 </div>
                 <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';

@@ -13,7 +13,7 @@
     <main class ="principal">
         <h1 class="add-album-title"> ALBUM INFO </h1>
         <form action=<?php if(!isset($_GET['name'])){
-            print "./scripts/add-album.php";} else {print "./scripts/add-album.php?name=".$_GET["name"];
+            print "./scripts/add-album.php";} else {print "'./scripts/add-album.php?name=".$_GET["name"]."'";
             }?> method="post" class="add-album-form" enctype="multipart/form-data" >
             <div class="add-album-info add-album-image">
                 <div for="img" class="file-label button" id="fileName" type>Change Photo</div>
