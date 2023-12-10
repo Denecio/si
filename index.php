@@ -35,7 +35,7 @@
                         <button class="button" type="submit" value="stock" name="submit"> IN STOCK </button>
                     </form>
                     <div class ="albuns">';
-                        include "./scripts/albums.php";
+                        include "./scripts/stock.php";
                     print'</div>
                     <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';
                 }
