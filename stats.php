@@ -17,7 +17,12 @@
                 <?php include 'scripts/stats.php'; ?>
             </div>
             <div class="stats">
-                <h2 class="stat-header">STATS BY GENRE</h2>
+                <h2 class="stat-header">ALBUMS BY GENRE</h2>
+                <?php include 'scripts/genre.php'; ?>
+            </div>
+            <div class="stats">
+                <h2 class="stat-header">ALBUMS BY ARTIST</h2>
+                <?php include 'scripts/artist.php'; ?>
             </div>
         </div>
     </main>

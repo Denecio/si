@@ -12,8 +12,7 @@
     <ul class="menu">
         <?php
             if($_SESSION['isadmin'] == true){
-                echo '<li> <a href="albums.php" class="botao"> ALBUMS </a> </li>
-                <li> <a href="stats.php" class="botao"> STATS </a> </li>';
+                echo '<li> <a href="stats.php" class="botao"> STATS </a> </li>';
             } else {
                 echo '<li> <a href="search.php" class="botao"> SEARCH </a> </li>';
             }

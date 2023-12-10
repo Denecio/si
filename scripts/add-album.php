@@ -20,7 +20,7 @@
         $result = pg_query($connection, $newPrice);
 
         if($result){
-            header("Location: ../albums.php");
+            header("Location: ../index.php");
         }
         else{
             echo "Something went wrong";

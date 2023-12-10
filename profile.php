@@ -20,21 +20,31 @@
                     <button type="submit" class="button"> LOG OUT </button>
                 </form>
             </div>
-
-            <div class="buttons">
-                <a href="addmoney.php">
-                    <button type="button" class="button"> ADD MONEY </button>
-                </a>
-            </div>
+            <?php
+            if ($_SESSION['isadmin'] == false) {
+                print '
+                <div class="buttons">
+                    <a href="addmoney.php">
+                        <button type="button" class="button"> ADD MONEY </button>
+                    </a>
+                </div>';
+                }
+            ?>
         </div>
-        <div class ="albums">
-            <div class="filas">
-                <h2 class="texto_tit"> LAST PURCHASES </h2>
-                <div class = "filas1">
-                    <?php include './scripts/profilelast.php' ?>
+        
+        <?php
+            if ($_SESSION['isadmin'] == false) {
+                print '
+                <div class ="albums">
+                    <div class="filas">
+                        <h2 class="texto_tit"> LAST PURCHASES </h2>
+                        <div class = "filas1">'.
+                            include "./scripts/profilelast.php".'
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>
+                <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';
+            }
+        ?>
     </main>
 </body>

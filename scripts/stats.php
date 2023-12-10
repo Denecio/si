@@ -6,6 +6,10 @@
     } else {
         $getClients = "SELECT COUNT(*) FROM client";
         $getAlbuns = "SELECT COUNT(*) FROM album";
+        $getValue = "SELECT units, price FROM album";
+        $getPurchases= "SELECT COUNT(*) FROM purchase WHERE temp=false";
+        $getProfit = "SELECT SUM(price) FROM album WHERE name in (SELECT album_name FROM itemoncart)";
+
         $result = pg_query($connection, $getClients);
         if (pg_num_rows($result) > 0) {
             $row = pg_fetch_array($result);
@@ -16,11 +20,34 @@
             $row = pg_fetch_array($result);
             $albuns = $row[0];
         }
+        $result = pg_query($connection, $getValue);
+        
+        if (pg_num_rows($result) > 0) {
+            $row = pg_fetch_all($result);
+            $value = 0;
+            foreach($row as $item){
+                $value += $item['units'] * $item['price'];
+            }
+        }
+        $result = pg_query($connection, $getPurchases);
+        if (pg_num_rows($result) > 0) {
+            $row = pg_fetch_array($result);
+            $purchases = $row[0];
+        }
+
+        $result = pg_query($connection, $getProfit);
+        if (pg_num_rows($result) > 0) {
+            $row = pg_fetch_array($result);
+            $total = $row[0];
+        }
     }
     //store the results in an array
     $stats = array(
-        "Users" => $clients,
-        "Albums" => $albuns
+        "Clients" => $clients,
+        "Albums" => $albuns,
+        "Store Value" => $value."€",
+        "Purchases" => $purchases,
+        "Total Made" => $total."€"
     );
 
     //print the stats
