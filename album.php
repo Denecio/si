@@ -29,7 +29,7 @@
         <p class="preco" ><?php print $price ?>€ </p>
         
         <?php
-            if($_SESSION["isadmin"])
+            if($_SESSION["isadmin"]){
                 print
                 "<div class='previous-prices'>
                     <p class='popup'>Check previous prices <b class='dropdown'>V</b> </p>
@@ -45,7 +45,7 @@
                 "<a href='scripts/delete-album.php?name=$name'>
                     <button class='button'> DELETE ALBUM</button>
                 </a>";
-            }
+            }}
         ?>
 
         <?php print "<form action='scripts/addtocart.php?name=".$name."'method='post'>"; ?>
