@@ -31,17 +31,19 @@
                 }
             ?>
         </div>
-        <div class ="albums">
-            <div class="filas">
-                <h2 class="texto_tit"> LAST PURCHASES </h2>
-                <div class = "filas1">
-                    <?php include './scripts/profilelast.php' ?>
-                </div>
-            </div>
-        </div>
+        
         <?php
             if ($_SESSION['isadmin'] == false) {
-                print '<a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';
+                print '
+                <div class ="albums">
+                    <div class="filas">
+                        <h2 class="texto_tit"> LAST PURCHASES </h2>
+                        <div class = "filas1">'.
+                            include "./scripts/profilelast.php".'
+                        </div>
+                    </div>
+                </div>
+                <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';
             }
         ?>
     </main>
