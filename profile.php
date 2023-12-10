@@ -20,12 +20,16 @@
                     <button type="submit" class="button"> LOG OUT </button>
                 </form>
             </div>
-
-            <div class="buttons">
-                <a href="addmoney.php">
-                    <button type="button" class="button"> ADD MONEY </button>
-                </a>
-            </div>
+            <?php
+            if ($_SESSION['isadmin'] == false) {
+                print '
+                <div class="buttons">
+                    <a href="addmoney.php">
+                        <button type="button" class="button"> ADD MONEY </button>
+                    </a>
+                </div>';
+                }
+            ?>
         </div>
         <div class ="albums">
             <div class="filas">
@@ -41,6 +45,10 @@
                 </div>
             </div>
         </div>
-        <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>
+        <?php
+            if ($_SESSION['isadmin'] == false) {
+                print '<a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';
+            }
+        ?>
     </main>
 </body>

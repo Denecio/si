@@ -14,7 +14,7 @@
     //if the key is correct
     if($extra_check['extra']===$key){
         print "extra";
-        header("Location: ../albums.php");
+        header("Location: ../index.php");
     }
     else{
         print "not extra";

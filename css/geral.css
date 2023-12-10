@@ -145,6 +145,7 @@ a{
 }
 
 .buttons{
+    margin-top: 2rem;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -171,7 +172,9 @@ a{
 }
 
 .card{
-
+    font-family: LATO-SEMIBOLD;
+    font-size: 3rem;
+    color: var(--black);
     height:auto;
     background-color: var(--rosa);
     padding: 10px;
