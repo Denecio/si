@@ -29,7 +29,12 @@
                     print '</div>
                     <a class="card" href="add-album.php"> + </a>';
                 } else {
-                    print '<div class ="albuns">';
+                    print '
+                    <form class="buttons">
+                        <button class="button" type="submit" value="all" name="submit"> SHOW ALL </button>
+                        <button class="button" type="submit" value="stock" name="submit"> IN STOCK </button>
+                    </form>
+                    <div class ="albuns">';
                         include "./scripts/albums.php";
                     print'</div>
                     <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>';
