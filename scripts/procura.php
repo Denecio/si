@@ -2,11 +2,50 @@
 //get the name, the artist and the image of the album from the database
 $connection = pg_connect($_SESSION['connection']);
 
-if (!isset($_POST['search'])) {
+if (!isset($_POST['search']) && !isset($_POST['opcoes'])) {
     $album = "SELECT name, artist, img FROM album";
-} else {
+} else if (!isset($_POST['search']) && isset($_POST['opcoes'])){
+    $option = $_POST['opcoes'];
+    if($option=="alfabeto"){
+        $order = "name ASC";
+    }
+    if($option=="lowest"){
+        $order = "price ASC";
+    }
+    if($option=="highest"){
+        $order = "price DESC";
+    }
+    if($option=="newest"){
+        $order = "release_date ASC";
+    }
+    if($option=="oldest"){
+        $order = "release_date DESC";
+    }
+
+    $album = "SELECT name, artist, img FROM album ORDER BY " .$order;
+} else if (isset($_POST['search']) && !isset($_POST['opcoes'])){
     $input = $_POST['search'];
-    $album = "SELECT name, artist, img FROM album WHERE name = '$input'";
+    $album = "SELECT name, artist, img FROM album WHERE name LIKE '%$input' OR name LIKE '%$input%' OR name LIKE '$input%' OR artist LIKE '%$input' OR artist LIKE '%$input%' OR artist LIKE '$input%'" ;
+} else{
+    $input = $_POST['search'];
+    $option = $_POST['opcoes'];
+    if($option=="alfabeto"){
+        $order = "name ASC";
+    }
+    if($option=="lowest"){
+        $order = "price ASC";
+    }
+    if($option=="highest"){
+        $order = "price DESC";
+    }
+    if($option=="newest"){
+        $order = "release_date ASC";
+    }
+    if($option=="oldest"){
+        $order = "release_date DESC";
+    }
+
+    $album = "SELECT name, artist, img FROM album WHERE name LIKE '%$input' OR name LIKE '%$input%' OR name LIKE '$input%' OR artist LIKE '%$input' OR artist LIKE '%$input%' OR artist LIKE '$input%' ORDER BY " .$order ;
 }
 
 $result = pg_query($connection, $album);

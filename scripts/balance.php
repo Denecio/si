@@ -5,11 +5,11 @@
 
     if(($_POST["balance"])!=null){
         $dinerointroduce = $_POST["balance"];
-
         print $dinerointroduce;
         $addmoney = "UPDATE client SET balance = balance + '".$dinerointroduce."' WHERE utilizador_username = '".$_SESSION['username']."'";
         $addmoney1 = pg_query($connection, $addmoney);
         $addmoney1 = pg_fetch_array($addmoney1);
+        header("Location: ../profile.php");
 
     }
     else{

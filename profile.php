@@ -25,9 +25,6 @@
                 <a href="addmoney.php">
                     <button type="button" class="button"> ADD MONEY </button>
                 </a>
-                <a href="myalbums.php">
-                    <button type="button" class="button"> SHOW ALL ALBUNS </button>
-                </a>
             </div>
         </div>
         <div class ="albums">
@@ -44,5 +41,6 @@
                 </div>
             </div>
         </div>
+        <a href="cart.php" class="card"> <img class="card1" src="imagens/carrinho.svg" width="50px" alt="CARRINHO DE COMPRAS"> </a>
     </main>
 </body>

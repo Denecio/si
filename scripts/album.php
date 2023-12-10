@@ -15,6 +15,7 @@
     $name = $result['name'];
     $units = $result['units'];
     $price = $result['price'];
+    $units = $result['units'];
     $artist = $result['artist'];
     $release_date = $result['release_date'];
     $img = $result['img'];
