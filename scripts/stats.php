@@ -43,7 +43,7 @@
     }
     //store the results in an array
     $stats = array(
-        "Users" => $clients,
+        "Clients" => $clients,
         "Albums" => $albuns,
         "Store Value" => $value."€",
         "Purchases" => $purchases,
