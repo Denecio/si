@@ -27,7 +27,7 @@
         }
     } else {
         $namelink = $_GET["name"];
-
+        print $namelink;
         $price = $_POST['price'];
         $img = $_FILES['img'];
         $imageData = "../uploads/".$img['name'];
