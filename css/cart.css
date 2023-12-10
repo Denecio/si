@@ -182,3 +182,29 @@
     background-color: var(--rosa);
     color: var(--black);
 }
+
+.total{
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+}
+
+.total h3{
+    font-family: LATO-BOLD;
+    font-size: 1.5em ;
+}
+
+.noitem{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.noitem p{
+    font-size: 1.5em;
+    font-family: LATO-BOLD;
+}
+
+.button{
+    width:20vw;
+}

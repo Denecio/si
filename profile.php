@@ -25,9 +25,6 @@
                 <a href="addmoney.php">
                     <button type="button" class="button"> ADD MONEY </button>
                 </a>
-                <a href="myalbums.php">
-                    <button type="button" class="button"> SHOW ALL ALBUNS </button>
-                </a>
             </div>
         </div>
         <div class ="albums">

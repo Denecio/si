@@ -24,6 +24,7 @@
             Album - <?php print $name ?> <br>
             Artist - <?php print $artist ?> <br>
             Release Date - <?php print $release_date ?> <br>
+            Units in Stock - <?php print $units ?> <br>
         </p>
 
         <p class="preco" ><?php print $price ?>€ </p>
